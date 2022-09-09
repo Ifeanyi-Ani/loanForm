@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Loan Application</title>
+    </head>
+    <body>
+        <h1>Loan Application Form</h1>
+        <p>Please fill in all needed information in the loan application form
+            below to request a loan. Information regarding credit worthiness are
+            requested for qualification. </p>
+        <form action="">
+            <label for="">Title</label>
+            <label for="" id="selectTitleError" class="errorMessage"></label>
+            <select name="Title" id="selectTitle">
+                <option value="">select</option>
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+                <option value="ms">Ms</option>
+            </select>
+            <label for="" id="selectTitleError" class="errorMessage"></label>
+
+            <label for="">Your name</label>
+            <div class="flexthis">
+            <div class="col1">
+                <label for="" id="firstNameError" class="errorMessage"></label>
+                <input type="text" class="inline-2cols" placeholder="First" id="firstName">
+            </div>
+            <div class="col2">
+                <label for="" id="lastNameError" class="errorMessage"></label>
+                <input type="text" class="inline-2cols" placeholder="Last" id="lastName">
+            </div>
+        </div>
+            <label for="">Gender</label>
+            <label for="" id="genderError" class="errorMessage"></label>
+            <input type="radio" name="gender" class="inline ">Male
+            <input type="radio" name="gender" class="inline spaceLeft">Female
+            
+            <label for="">Birth Date</label>
+            <label for="" id="dobError" class="errorMessage"></label>
+            <input type="Date" id="dob">
+           
+            <label for="">Phone Number</label>
+            <label for="" id="phoneNumberError" class="errorMessage"></label>
+            <input type="number" placeholder="### ### #####" id="phoneNumber">
+
+            <label for="">Account Balance</label>
+            <label for="" id="accountBalError" class="errorMessage"></label>
+            <input type="number" id="accountBal">
+
+            <label for="">Loan Amount</label>
+            <label for="" id="loanAmountError" class="errorMessage"></label>
+            <input type="number" id="loanAmount">
+
+            <label for="">Your Credit History Month</label>
+            <label for="" id="creditHistoryError" class="errorMessage"></label>
+            <select name="creditHistory" id="creditHistory">
+                <option value="">Credit History</option>
+                <option value="1">1 month</option>
+                <option value="2">2 months</option>
+                <option value="3">3 months</option>
+                <option value="4">4 months</option>
+                <option value="5">5 months</option>
+                <option value="6">6 months</option>
+                <option value="8">8 months</option>
+                <option value="9">9 months</option>
+                <option value="10">10 months</option>
+            </select>
+           
+            <label for="">Last Deposit</label>
+            <label for="" id="lastDepositError" class="errorMessage"></label>
+            <select name="lastDeposit" id="lastDeposit">
+                <option value="">Last Deposit</option>
+                <option value="lessWeek">Less than 1 week</option>
+                <option value="lessMonth">Less than 1 month</option>
+                <option value="less3month">Less than 3 month</option>
+                <option value="Above">Above 3 month</option>
+            </select>
+           
+            <label for="">Your last loan collection date:</label>
+            <label for="" id="lastLoanError" class="errorMessage"></label>
+            <select name="collectionDate" id="lastLoan">
+                <option value="">choose one</option>
+                <option value="1month">1 month</option>
+                <option value="2month">2 months</option>
+                <option value="3month">3 months</option>
+                <option value="4month">4 months</option>
+                <option value="5month">5 months</option>
+                <option value="6month">6 months</option>
+                <option value="7month">7 months</option>
+                <option value="above">Above 6 months</option>
+            </select>
+           
+            <label for="">Loan Repayment Period</label>
+            <label for="" id="payBackPeriodError" class="errorMessage"></label>
+            <select name="payBackPeriod" id="payBackPeriod">
+                <option value="">PayBack Period</option>
+                <option value="Below6months">Below 6 months</option>
+                <option value="12months">Below 1 Year</option>
+                <option value="above 12 months">Above 1 Year</option>
+            </select>
+           
+            <label for="">
+                Account type:
+            </label>
+            <label for="" id="accountTypeError" class="errorMessage"></label>
+            <input type="radio" name="accountType" class="inline">Savings Account
+            <input type="radio" name="accountType" class="inline spaceLeft">Current Account
+            
+            <label for="" id="messageTxt"></label>
+            <button type="button" id="btn">Apply for a Loan</button>
+        </form>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

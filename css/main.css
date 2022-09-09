@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: aquamarine;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 16px auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+form label {
+  display: block;
+  margin: 8px 0;
+}
+
+form input, form select {
+  margin: 0 0 10px 0;
+  width: 100%;
+  min-height: 32px;
+  outline: none;
+  background-color: aqua;
+  border: 1px solid aqua;
+}
+
+form input:hover, form select:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form input:focus, form select:focus {
+  border: 1px solid #04bebe;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form .flexthis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+}
+
+form .flexthis .col1 {
+  width: 45%;
+}
+
+form .flexthis .col2 {
+  width: 45%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+form .inline {
+  width: unset;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+form .spaceLeft {
+  margin: 0 8px 0 50px;
+}
+
+form .errorMessage {
+  color: red;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+  margin: unset;
+}
+
+form #messageTxt {
+  width: 45%;
+  margin: 10px auto;
+  font-size: 16px;
+  min-width: 300px;
+  padding: 5px;
+}
+
+form button[type="button"] {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  height: 32px;
+  font-size: 16px;
+  background-color: #0aadad;
+  border-color: black;
+  min-width: 300px;
+}
+
+@media (max-width: 425px) {
+  form .flexthis {
+    display: block;
+  }
+  form .flexthis .col1 {
+    width: 100%;
+  }
+  form .flexthis .col2 {
+    width: 100%;
+  }
+  form .inline {
+    margin: 0 3px 0 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
