@@ -143,7 +143,7 @@ function firstCondition(){
     }
     
     function secondCondition(){
-        if(creditHistory.value=='1'|| creditHistory.value=='2'|| creditHistory.value=='3' ||creditHistory.value=='4' || creditHistory.value=='5' || creditHistory.value=='6'){
+        if(creditHistory.value=='6'|| creditHistory.value=='7'|| creditHistory.value=='8' ||creditHistory.value=='9' || creditHistory.value=='5' || creditHistory.value=='10'){
             decisionPoint+=10;
         }else{
             decisionPoint+=0;
@@ -160,7 +160,7 @@ function firstCondition(){
     }
     
     function fourthCondition(){
-        if(lastLoan.value=='1month'||lastLoan.value=='2month'||lastLoan.value=='3month'||lastLoan.value=='4month'||lastLoan.value=='5month'||lastLoan.value=='6month'){
+        if(lastLoan.value=='6month'||lastLoan.value=='7month'||lastLoan.value=='above'){
             decisionPoint+=10;
         
     }else{
@@ -188,10 +188,10 @@ function firstCondition(){
 
     function decideTest(){
         if(decisionPoint>30){
-            messageTxt.innerHTML='<i>Dear '+firstName.value.valueOf(firstName) +' ' + lastName.value.valueOf(lastName)+' your loan of N'+loanAmount.value.valueOf(loanAmount) + ' has been Approved. </i>'
+            messageTxt.innerHTML='<i>Dear '+firstName.value.valueOf(firstName) +' ' + lastName.value.valueOf(lastName)+' your loan of N'+loanAmount.value.valueOf(loanAmount) + ' has been Approved. Your point is: ' +decisionPoint+'pts </i>'
             messageTxt.style.backgroundColor='#0aadad'
         }else{
-            messageTxt.innerHTML='<i>Dear '+firstName.value.valueOf(firstName) +' ' + lastName.value.valueOf(lastName)+' your loan of N'+loanAmount.value.valueOf(loanAmount) + ' has been Rejected. Reapply after 60 days. </i>'
+            messageTxt.innerHTML='<i>Dear '+firstName.value.valueOf(firstName) +' ' + lastName.value.valueOf(lastName)+' your loan of N'+loanAmount.value.valueOf(loanAmount) + ' has been Rejected. Reapply after 60 days. Your point is: ' +decisionPoint+'pts </i>'
             messageTxt.style.backgroundColor='#0aadad'
         }
     resetAll();
