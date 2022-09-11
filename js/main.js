@@ -208,4 +208,5 @@ function firstCondition(){
         lastDeposit.value='';
         lastLoan.value='';
         payBackPeriod.value='';
+        decisionPoint=0;
     }
